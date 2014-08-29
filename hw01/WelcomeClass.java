@@ -19,9 +19,9 @@ public class WelcomeClass{
     System.out.println("    | WELCOME |     ");
     System.out.println("    -----------     ");
     System.out.println("  ^  ^  ^  ^  ^  ^  ");
-    System.out.println(" / \/ \/ \/ \/ \/ \ ");
+    System.out.println(" / \\/ \\/ \\/ \\/ \\/ \\ ");
     System.out.println("|-S--H--G--2--1--7-|");
-    System.out.println(" \ /\ /\ /\ /\ /\ / ");
+    System.out.println(" \\ /\\ /\\ /\\ /\\ /\\ / ");
     System.out.println("  v  v  v  v  v  v  ");
     System.out.println("One of my dogs ate my homework. No kidding.");
     
