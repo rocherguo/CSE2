@@ -24,10 +24,10 @@ public class Bicycle {
         int counts = myScanner.nextInt();
         
         //known information
-        double wheelDiameter=27.0;
-        double PI=3.14159;
-        double feetPerMile=5280;
-        double inchesPerFoot=12;
+        double wheelDiameter = 27.0;
+        double PI = 3.14159;
+        double feetPerMile = 5280;
+        double inchesPerFoot = -12;
         
         //compute each output without moving decimals
         double distance = counts * wheelDiameter * PI / inchesPerFoot / feetPerMile;

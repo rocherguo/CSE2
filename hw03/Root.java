@@ -44,7 +44,7 @@ public class Root {
         
         // Print out the result
         System.out.println ("The cube root is " + guess5 + " :");
-        System.out.println (guess5*guess5*guess5 + "=" + value);
+        System.out.println (guess5 + "*" + guess5 + "*" + guess5 + "=" + value);
 
         }   //end of main methid
 
