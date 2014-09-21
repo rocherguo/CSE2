@@ -3,7 +3,7 @@
 //CSE2
 //Sep/21/2014
 //hw04
-//IncomeEax Java Program
+//IncomeTax Java Program
 //calculatet the amount of tax on the income
 //  first compile the program
 //      javac IncomeTax.java
