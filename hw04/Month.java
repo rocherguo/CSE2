@@ -53,7 +53,7 @@ public class Month  {
                                 if (year > 0)   {
                                     
                                     //  start of if (year is leap year)
-                                    if (year % 4 == 0)   {
+                                    if (year % 4 == 0 && year % 400 == 0)   {
                                         System.out.println ("The month has 29 days");
                                     }   //  end of if (year is leap year)
                                     //  start of else (year is not leap year)
