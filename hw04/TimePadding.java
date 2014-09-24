@@ -33,17 +33,17 @@ public class TimePadding    {
         
         //  start of if (seconds <= 9)
         if (seconds <= 9)   {
-            System.out.println (hours + ":0" + minutes + ":0" + seconds);
+            System.out.println ("The time is " + hours + ":0" + minutes + ":0" + seconds);
         }   //  end of if (seconds <= 9)
         //  start of else (seconds > 9)
         else    {
-            System.out.println (hours + ":0" + minutes + seconds);
+            System.out.println ("The time is " + hours + ":0" + minutes + seconds);
         }   //  end of else (seconds > 9)
     }   //  end of if (minutes <= 9)
     
     //  start of else (minutes > 9)
     else    {
-        System.out.println (hours + minutes + seconds);
+        System.out.println ("The time is " + hours + minutes + seconds);
     }   //  end of else (minutes > 9)
     
         
