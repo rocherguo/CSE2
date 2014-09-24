@@ -52,19 +52,37 @@ public class Month  {
                                 //  start of if (year input is positive)
                                 if (year > 0)   {
                                     
-                                    //  start of if (year is leap year)
-                                    if (year % 4 == 0 && year % 400 == 0)   {
-                                        System.out.println ("The month has 29 days");
-                                    }   //  end of if (year is leap year)
-                                    //  start of else (year is not leap year)
+                                    //  start of if (millenniums)
+                                    if (year % 100 == 0 )   {
+                                        
+                                        //  start of if (year is a millennium leap year)
+                                        if (year % 400 == 0)    {
+                                            System.out.println ("The month has 29 days");
+                                        }   //  end of if (year is a millennium leap year)
+                                        
+                                        else    {   //  start of else (year is a millennium common year)
+                                            System.out.println ("The month has 28 days"); 
+                                        }   //  end of else (year is a millennium common year)
                                     
+                                    }   //  end of if (millenniums)
+                                    
+                                    //  start of else (year is not millenniums)
                                     else    {
+                                        
+                                        //  start of if (year is a leap year)
+                                        if (year % 4 == 0)  {
+                                          System.out.println ("The month has 29 days");  
+                                        }   //  end of if (year is a leap year)
+                                        
+                                        else    {   //  start of else (year is a common year)
                                         System.out.println ("The month has 28 days");
-                                    }   //  end of else (year is not leap year)
+                                    }   //  end of else (year is a common year)
+                                
+                                }   //  end of if (year is not millenniums)
                                 
                                 }   //  end of if (year input is positive)
                                 
-                                else    {
+                                else    {   //  start of else (year input is not positive)
                                     System.out.println ("You did not enter a positive int");
                                     return;
                                 }   //  end of else (year input is not positive)    
