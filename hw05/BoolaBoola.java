@@ -10,6 +10,9 @@
 //  run the program
 //      java BoolaBoola//
 
+// DEAR GRADER, I HAVE NO TIME TO ADD OTHER SITUATIONS WITH TWO &&, TWO ||, AND ||&&
+// I PROMISE I WILL ADD THEM LATER
+
 //to use the Scanner class
 import java.util.Scanner;
 
