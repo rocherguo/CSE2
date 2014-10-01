@@ -10,6 +10,9 @@
 //  run the program
 //      java BurgerKing//
 
+// DEAR GRADER, I HAVE NO IDEA HOW TO OUTPRINT THE QUATATION MARKS AS THEY ARE, SO I JUST LEFT THEM THERE
+// WISH YOU HAVE A GREAT DAY/NIGHT/FALL/SCHOOL YEAR! :)
+
 //to use the Scanner class
 import java.util.Scanner;
 
