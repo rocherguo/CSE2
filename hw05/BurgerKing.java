@@ -10,8 +10,6 @@
 //  run the program
 //      java BurgerKing//
 
-// DEAR GRADER, I HAVE NO IDEA HOW TO OUTPRINT THE QUATATION MARKS AS THEY ARE, SO I JUST LEFT THEM THERE
-// WISH YOU HAVE A GREAT DAY/NIGHT/FALL/SCHOOL YEAR! :)
 
 //to use the Scanner class
 import java.util.Scanner;
@@ -26,9 +24,9 @@ public class BurgerKing {
         
         //  prompt use to enter input
         System.out.println ("Enter a letter to indicate a choice of");
-        System.out.println (" Burger (B or b)");
-        System.out.println (" Soda (S or s)");
-        System.out.print (" Fries (F or f) ");
+        System.out.println ("\t Burger (B or b)");
+        System.out.println ("\t Soda (S or s)");
+        System.out.print ("\t Fries (F or f) ");
         
         String input = myScanner.next();
         //  start of if (input length = 1)
@@ -36,7 +34,7 @@ public class BurgerKing {
             char choice = input.charAt(0); 
             switch (choice) {   //  start of switch
                 case 'B':
-                    System.out.println ("Enter A or a for ''all the fixings''");
+                    System.out.println ("Enter A or a for \"all the fixings\"");
                     System.out.println ("C or c for cheese");
                     System.out.print ("N or n for none of the above ");
                     char Burgerfixings = myScanner.next().charAt(0);
@@ -64,7 +62,7 @@ public class BurgerKing {
                         }   //  end of switch (Burgerfixings) 
                         break;
                 case 'b':
-                    System.out.println ("Enter A or a for ''all the fixings''");
+                    System.out.println ("Enter A or a for \"all the fixings\"");
                     System.out.println ("C or c for cheese");
                     System.out.print ("N or n for none of the above ");
                     char burgerfixings = myScanner.next().charAt(0);
