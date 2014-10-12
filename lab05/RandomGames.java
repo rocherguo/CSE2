@@ -10,8 +10,7 @@
 //  run the program
 //      java RandomGames//
 
-// DEAR GRADER, I DO NOT KNOW HOW TO "UNIMPLEMENT" THE CRAP AND THE PICK CARD, SO I JUST LEFT IT HERE
-// WISH YOU HAVE A GREAT DAY/NIGHT/FALL/SCHOOL YEAR! :)
+// "UNIMPLEMENT" THE CRAP AND THE PICK CARD
 
 //  to use the Scanner class
 import java.util.Scanner;
