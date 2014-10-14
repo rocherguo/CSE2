@@ -25,20 +25,26 @@ public class Root {
     double x = scan.nextDouble();
     
     if (x > 0)  {   //  start of if (input is greater than 0)
+        
         double low = 0;
         double high = 1 + x;
-        double middle = (low + high) / 2;
+        double middle = high / 2;
 
         while ((high - low) > 0.0000001 * high)    {   //  start of while
+
             if (middle * middle > x)    {   //  start of if
                 high = middle;
             }   //  end of if
             else    {   //  start of else
                 low = middle;
             }   //  end of else
+
+            middle = (low + high) / 2;
+
         }   //  end of while
         
         //  print out the outcome
+        middle = (double) Math.round (middle * 10000000) / 10000000;
         System.out.println ("The root is: " + middle); 
     }   //  end of if (input is greater than 0)
     
