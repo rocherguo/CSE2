@@ -89,13 +89,12 @@ public class NumberStack {
         do  {
             j++;
             k=0;
-            do  {
-                k++;
-               //System.out.println ("k: " + k);
-               //System.out.println ("i: " + i);
-               //System.out.println ("j: " + j);
-                System.out.print (" ");
-            }while (k<n-i+1);
+            if (i!=n)   {   //  start of if (skipping the space before n=i)
+                do  {
+                    k++;
+                    System.out.print (" ");
+                }   while (k<=n-i-1);
+            }   //  end of if (skipping the space before n=i)
             l=1;
             do {
                 if (j==i+2)  {
@@ -105,10 +104,10 @@ public class NumberStack {
                     System.out.print (i);
                 }
                 l++;
-            }while (l<=2*i-1);
+            }   while (l<=2*i-1);
             System.out.println ();
-        }while (j<=i+1);
+        }   while (j<=i+1);
         i++;
-    }while (i<=n);    
+    }   while (i<=n);    
     }   //  end of main method
 }   //  end of class
