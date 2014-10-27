@@ -1,10 +1,18 @@
+///////////////////////////////////////////////
+//Shen Guo
+//CSE 2
+//Oct 24
+//lab 08
+//generate three methods
+
+//  main method copied from coursesite
 import java.util.Scanner;
 public class Methods{
     
     public static void main(String [] arg){
 	Scanner scan=new Scanner(System.in);
 	int a,b,c;
-	System.out.print("Enter three ints- ");
+	System.out.print("Enter three ints- "); //  changed the outprint format to match the sample run
 	a=getInt(scan);
 	System.out.print("Enter an int- ");
 	b=getInt(scan);
@@ -16,6 +24,7 @@ public class Methods{
 	System.out.println("It is "+ascending(a,b,c)+" that "+a+", "+b+
                    	", and "+c+" are in ascending order");
     }
+    //  end of copied main method
   
       //  starting to define getInt() method
     public static int getInt(Scanner scan)  {
@@ -44,6 +53,4 @@ public class Methods{
         else
             return false;
     }   //  end of defining ascending() class
-
-
-}
+}   //  end of class
