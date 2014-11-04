@@ -1,6 +1,18 @@
-import java.util.Scanner;
+////////////////////////////////////////
+//Shen Guo
+//CSE2
+//Nov/1/2014
+//hw 09
+//Blocked Again Java Program
+//print out pattern according to user's input
+//  compile the program
+//      javac BlockedAgain.java
+//  run the program
+//      java BlockedAgain
 
-public class Wow {
+
+import java.util.Scanner;
+public class BlockedAgain{
     public static void main(String []s){
         int m;
         //force user to enter int in range 1-9, inclusive.
@@ -12,33 +24,33 @@ public class Wow {
 public static int getInt()    {
     System.out.print("Enter an int between 1 and 9, inclusive: ");
     Scanner scan = new Scanner (System.in);
-//    String input = scan.next();
+    String input = scan.next();
     while (true)    {
-        if (checkInt(scan) == true) {
-            int n = scan.nextInt();
+        if (checkInt(input) == true) {
+            int n = Integer.parseInt(input);
             if (checkRange(n) == true)   {
                 return n;
             }
             else    {
                 System.out.print ("You did not enter an int in [1,9]; try again: ");
-                scan.nextInt();
+                input = scan.next();
             }
         }
         else    {
             System.out.print ("You did not enter an int; try again: ");
-            scan = new Scanner (System.in);
+            input = scan.next();
         }
     }   //  end of while
 }   //  end of getInt() method
 
     //  start of checkInt() method
-    public static boolean checkInt()   {
-        if (scan.hasNextInt())  {
+    public static boolean checkInt(String n)   {
+        try{
+            Integer.parseInt(n);
+        }catch (NumberFormatException e)    {
             return false;
         }
-        else    {
-            return true;
-        }
+        return true;
     }   //  end of checkInt() method
 
     //  start of checkRange() method
