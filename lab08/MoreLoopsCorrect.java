@@ -22,18 +22,6 @@ public class MoreLoopsCorrect{
 	//COMMENT OUT THE ABOVE SIX LINES OF CODE AND REPLACE WITH 
 	//WHILE STATEMENTS
       
-
-        n=scan.nextInt();
-
-	for(int j=0;j<n && j<40;j++){
-	    for(int k=0;k<j+1;k++){
-		System.out.print('*');
-	    }
-	    System.out.println();
-	}
-	//COMMENT OUT THE ABOVE SIX LINES OF CODE AND REPLACE WITH 
-	//WHILE STATEMENTS
-      
 	int k=4;
 
 	do{
