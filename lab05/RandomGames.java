@@ -42,6 +42,7 @@ public class RandomGames {
                             System.out.println ("Roulette: " + a);
                     }   //  end of switch
                     break;
+                }
                 }   //  end of if (roulette)
             
                 //  start of else if (craps)
@@ -76,7 +77,8 @@ public class RandomGames {
                 else    {
                     System.out.println (game + "is not one of 'R', 'r', 'C', 'c', 'P', or 'p'");
                     return;    
-                    }   //  end of else (invalid input)
+                    }
+                    //  end of else (invalid input)
 
             
             //  start of else (length is not 1)
