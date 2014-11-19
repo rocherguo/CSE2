@@ -2,29 +2,16 @@ import java.util.Scanner;
 
 public class Wow {
     public static void main(String []args){
-/*    int a=0; int b=1;
-    System.out.println ("a: "+ a);
-    System.out.println ("b: "+ b);
+    double [] myList = {0,0,3,0,0,0};
+    double max = myList[0];
+    int indexOfMax = 0;
+    for (int i = 1; i < myList.length; i++) {
+        if (myList[i] >= max) {
+            max = myList[i]; indexOfMax = i;
+            System.out.print (indexOfMax + " "+ max);
 
-while (b>0){
+            }
+    }
 
-a+=b;
-    System.out.println ("a: "+ a);
-
-b+=a;
-    System.out.println ("b: "+ b);
-
-}
-*/
-int a=0;
-int b=1;
-for (int i=1;i<5;i++){
-    for (int j=0;j<i;j++){
-        System.out.println("a: "+a);
-        System.out.println("b: "+b);
-        a+=b;
-    b+=a;
     }
 }
-  }
-}   //  end of class
