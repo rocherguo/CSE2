@@ -23,7 +23,7 @@ public class PokerOdds{
       
       //  initiate arrays for suits and ranks
       String[] suits = {"Spades", "Hearts", "Diamonds", "Clubs"};
-      String[] ranks = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
+      String[] ranks = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
       int deck[] = new int [52];
       //  initialize cards
       for (int i=0; i<52; i++){
@@ -92,12 +92,15 @@ public class PokerOdds{
         //  import exactlyOneDup method
         if (FindDuplicates.exactlyOneDup(ranks)){
           //  to find out the rank that appears in the pair
-          int dup = ranks[0];
-          for (int i=0; i< ranks.length; i++){
-            if (dup == ranks[i]){
-              break;
+          int dup = 0;
+          for (int n=0; n<ranks.length; n++){
+            for (int i=n+1; i<ranks.length; i++){ 
+              if (ranks[n] == ranks[i]){
+                dup = ranks [n];
+                break;
+              }
             }
-          }
+          }  
           NumOfExactlyOneDup[dup]+=1; //  add to the according element in NumOfExactlyOneDup array
         }
         else {
