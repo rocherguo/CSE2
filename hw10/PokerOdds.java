@@ -59,7 +59,7 @@ public class PokerOdds{
         System.out.println (Hearts);
         System.out.println (Spades);
         
-        //  prompy the user go again or not
+        //  prompt the user go again or not
         System.out.print ("Go again? Enter 'y' or 'Y', anything else to quit- ");
         answer = scan.next();
     } while (answer.equals ("y") || answer.equals ("Y")); //  end of do-while loop
